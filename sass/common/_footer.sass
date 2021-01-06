@@ -1,0 +1,45 @@
+.footer
+    background: #283645
+    
+.footer__info
+    padding-top: 10px
+
+    +phone
+        display: flex
+        justify-content: space-between
+
+.nav
+    padding-bottom: 20px
+.nav__link
+    display: none
+    color: $textColor
+
+    +tablet
+        display: inline
+        position: relative
+        margin: 0 rem(10px)
+
+        &:last-child
+            margin-right: 0
+
+        &::before
+            content: ''
+            position: absolute
+            top: 50%
+            left: rem(-10px)
+            width: 2px
+            height: 2px
+            border-radius: 50%
+            background: rgba(#fff, .4)
+
+        &:first-child::before
+            display: none
+
+        
+        
+
+        
+            
+
+
+
