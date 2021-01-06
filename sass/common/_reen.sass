@@ -1,0 +1,77 @@
+.reen
+    background: $mainColor
+    color: white
+    padding-top: 20px
+
+.reen__list
+    margin-top: 30px
+    padding: 0
+    list-style: none
+    display: grid
+    gap: 20px
+
+    +phone
+        grid-template-columns: repeat(2, 1fr)
+
+    +laptop
+        grid-template-columns: repeat(4, 1fr)
+
+.reen__title
+    font-weight: bold
+
+.reen__text
+    color: $textColor
+    margin-top: 10px
+    padding: 0
+
+.reen__link
+    color: $textColor
+
+.reen__grid
+    display: grid
+    gap: 5px
+    grid-template-columns: repeat(2, 1fr)
+
+.reen__grid--img
+    width: 100%
+    object-fit: cover
+
+.reen__contact
+    +grid(repeat(10, 1fr), $gap: 5px 0)
+
+.reen__contact--link
+    color: $textColor
+
+    &:nth-child(2)
+        grid-column: 2 / 11
+
+    &:nth-child(4)
+        grid-column: 2 / 11
+
+    &:nth-child(6)
+        grid-column: 2 / 11
+
+.reen__icon
+    color: white
+    margin: 0 auto
+
+.reen__form
+    width: 320px
+    height: 40px
+    background: white
+
+.input
+    width: 190px
+    padding: 10px
+    border: none
+
+.button
+    border: none
+    width: 120px
+    height: 30px
+    background: $secondColor
+    color: white
+        
+
+
+
